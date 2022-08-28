@@ -5,6 +5,21 @@
   font-family: 'Roboto', sans-serif;
 }
 
+:root {
+
+}
+
+
+
+/* works on Firefox */
+* {
+  scrollbar-width: thin;
+  /* "auto" or "thin" */
+  scrollbar-color: rgba(158, 146, 238, 0.72) rgba(241, 241, 241, 0.72);
+  /* scroll thumb and track */
+}
+
+/* Works on Chrome, Edge, and Safari */
 body::-webkit-scrollbar {
   width: 12px;
 }
@@ -43,24 +58,23 @@ body {
   flex-direction: column;
 }
 
-.header {
-  width: 100%;
-  height: 600px;
-  background: url('https://www.linkpicture.com/q/110601.jpg') center no-repeat;
-}
+
 
 .navbar {
   width: 100%;
-  height: 60px;
-
+  height: 70px;
   display: flex;
   align-items: center;
   justify-content: space-around;
-
   background: rgba(31, 0, 219, 0.72);
 }
 
-.labelmenu {
+.logo {
+  text-decoration: none;
+  color: #fff;
+}
+
+.label-menu {
   width: 40px;
   height: 40px;
   z-index: 100;
@@ -74,27 +88,20 @@ body {
   display: none;
 }
 
-.menu-in {
+.menu-check {
   display: none;
 }
-
-.menu-in:checked+.labelmenu {
+.menu-check:checked+.labelmenu {
   display: none;
 }
-
-.menu-in:checked+.navul {
+.menu-check:checked+.navul {
   display: flex;
 }
-
-.labelmenu:hover>.bar {
+.label-menu:hover>.bar {
   background-color: #FF3434
 }
 
-h2 {
-  color: #fff;
-}
-
-.navul {
+.nav-ul {
   display: flex;
   width: 500px;
   display: flex;
@@ -104,8 +111,10 @@ h2 {
 
 .link {
   list-style: none;
+}
+.link a {
+  text-decoration: none;
   color: #fff;
-  cursor: pointer;
 }
 
 .link:hover {
@@ -127,6 +136,12 @@ button {
 button:hover {
   color: #FF3434;
   background: #fff;
+}
+
+.header {
+  width: 100%;
+  height: 600px;
+  background: url('https://www.linkpicture.com/q/110601.jpg') center no-repeat;
 }
 
 .header-div {
@@ -164,12 +179,16 @@ span {
 .header-image {
   width: 320px;
   height: 420px;
-  background: url('https://img.freepik.com/vetores-gratis/hacker-operando-uma-ilustracao-do-icone-dos-desenhos-animados-laptop-conceito-de-icone-de-tecnologia-isolado-estilo-flat-cartoon_138676-2387.jpg?w=740&t=st=1661629457~exp=1661630057~hmac=0079d6dd1f564a0228e78c2d47b9ecd9381545366e800ff60d34a35eabc63cd2') center no-repeat;
+  background: center no-repeat;
   background-size: cover;
   border-radius: 20px 0 20px 0;
   box-shadow: 0 10px 10px 5px rgba(0, 0, 0, 0.5);
 }
-
+.header-image img {
+  width: 320px;
+  height: 420px;
+  border-radius: 20px 0 20px 0;
+}
 .main {
   width: 100%;
   height: auto;
@@ -334,14 +353,19 @@ span {
 .circle.image.a {
   width: 200px;
   height: 100px;
-  background: url('https://i.postimg.cc/Bny68zXr/1661632119653.png') center no-repeat;
+  background: center no-repeat;
   background-size: cover;
+}
+.circle.image img {
+  width: 200px;
+  height: 100px;
+  border-radius: 50px;
 }
 
 .circle.image.b {
   width: 200px;
   height: 100px;
-  background: url('https://i.postimg.cc/0xLTZPY7/1661632745331.png') center no-repeat;
+  background: center no-repeat;
   background-size: cover;
 }
 
@@ -353,7 +377,7 @@ span {
   width: 60%;
   height: 300px;
   border-radius: 10px;
-  background: url('https://i.postimg.cc/6qr2Cx8j/Untitled-1.png') center no-repeat;
+  background: center no-repeat;
   background-size: contain;
 }
 

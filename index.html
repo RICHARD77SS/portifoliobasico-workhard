@@ -10,31 +10,37 @@
 </head>
 
 <body>
-  <header class="header">
-    <nav class="navbar">
-      <h2>WorkHard...</h2>
-      <label class="labelmenu" for="menu">
-        <div id="b1" class="bar"></div>
-        <div class="bar"></div>
-        <div id="b2" class="bar"></div>
-      </label>
-      <input id="menu" class="menu-in" title="menu" type="checkbox" />
+  <nav aria-label="Trabalhe duro" id='home' class="navbar">
+    <h2><a class="logo" href="#home">WorkHard...</a></h2>
 
-      <ul class="navul">
-        <li class="link">Home</li>
-        <li class="link">Serviços</li>
-        <li class="link">Sobre</li>
-        <li class="link">Contato</li>
-        <li class="link"><button type="button">Login</button></li>
-      </ul>
-    </nav>
+    <label aria-haspopup="true" aria-expanded="false" class="label-menu" for="menu">
+      <div id="b1" class="bar"></div>
+      <div class="bar"></div>
+      <div id="b2" class="bar"></div>
+    </label>
+
+    <input id="menu" class="menu-check" title="menu" type="checkbox" />
+
+    <ul role="menubar" class="nav-ul">
+      <li role="none" class="link"><a role="menuitem" href="#home">Home</a></li>
+      <li role="none" class="link"><a role="menuitem" href="#abault">Sobre</a></li>
+      <li role="none" class="link"><a role="menuitem" href="#creations">Criações</a></li>
+      <li role="none" class="link"><a role="menuitem" href="#tecnologies">Tecnologias</a></li>
+      <li role="none" class="link"><button type="button">Login</button></li>
+    </ul>
+  </nav>
+  <header class="header">
     <div class="header-div">
       <div class="header-text">
         <h3 class="h3">My Design Creation<br>Testes <span>Dev Front-End</span></h3>
         <p class="desc">Construção de layouts responsivos com fluidez</p>
         <button type="button">Ver perfil</button>
       </div>
-      <div class="header-image"></div>
+      <div class="header-image">
+        <img
+          src="https://img.freepik.com/vetores-gratis/hacker-operando-uma-ilustracao-do-icone-dos-desenhos-animados-laptop-conceito-de-icone-de-tecnologia-isolado-estilo-flat-cartoon_138676-2387.jpg?w=740&t=st=1661629457~exp=1661630057~hmac=0079d6dd1f564a0228e78c2d47b9ecd9381545366e800ff60d34a35eabc63cd2"
+          alt="Desenho de pessoa operando um notebook">
+      </div>
     </div>
   </header>
   <main class="main">
@@ -43,11 +49,12 @@
     <div class="main-text">
       <h3>A criação e as ferramentas.</h3>
       <br />
-      <p>Atualmente usando Reactjs juntamente a lib Styled-components e typescript, estou reproduzindo o layouts
-        famosos ja existentes como objeto de treinamento, para auxiliar no aumento da minha fluidez com as
+      <p>Atualmente usando Reactjs juntamente a lib Styled-components e typescript, estou reproduzindo layouts
+        famosos já existentes como objeto de treinamento, para auxiliar no aumento da minha fluidez com as
         tecnologias.<br />
         <br />
-        Neste site não excusivamente eu utilizei apenas HTML e CSS como ferramentas, a cada dia aprendo algo novo e
+        Neste site não excusivamente eu utilizei apenas HTML, CSS, e javascript como ferramentas, a cada dia aprendo
+        algo novo e
         tento aplicar no meu dia a dia para melhor fixação mental e motora.
       </p>
       <br />
@@ -88,7 +95,8 @@
         ReactJs
       </div>
       <div class="bar-contet">
-        <div class="circle image a"></div>
+        <div class="circle image a"><img src="https://i.postimg.cc/Bny68zXr/1661632119653.png"
+            alt="Imagem do site aalfortudotrue"></div>
         <div class="text-bar">
           <h4>AllForTudoTrue</h4>
           <p>Minha primeira experiencia com ReactJs e algumas libs </p>
@@ -100,7 +108,8 @@
         HTML & CSS
       </div>
       <div class="bar-contet">
-        <div class="circle image b"></div>
+        <div class="circle image b"><img src="https://i.postimg.cc/0xLTZPY7/1661632745331.png"
+            alt="imagem do site WorkHard"></div>
         <div class="text-bar">
           <h4>WorkHard</h4>
           <p>Este site, um pequeno portifolio Front-End criado Usando Html, Css e javascript.</p>
@@ -123,7 +132,9 @@
     <h3>Tecnologias mais usadas atualmente no meu dia a dia</h3>
     <p class="tec-desc">ReactJs, Styled-components, Mui, Html, Css, Typescript, </p>
   </div>
-  <div class="banner"></div>
+  <div class="banner">
+    <img src="https://i.postimg.cc/6qr2Cx8j/Untitled-1.png" alt="imagem com o nome das tecnologias citadas">
+  </div>
   <div class="title infos">
     <p>You aways have choices</p>
     <h3>More title for breve description</h3>
@@ -174,8 +185,7 @@
     <h3>More title for breve description</h3>
   </div>
   <div class="slider-conteiner">
-    <Button onclick='goRightb()' class="button">right</Button>
-    
+    <Button onclick='goRightb()' type="button" class="button">right</Button>
     <div id="sliderb" class="cards b">
       <div class="card b">
         <img class="imagem b" src="https://i.postimg.cc/rmtSCLpn/626799.jpg" alt="">
@@ -211,14 +221,12 @@
   <div class="banner-p"></div>
   <footer class="footer">
     <ul>
-      <li>
-        <h4>Title info</h4>
-      </li>
-      <li>Content here</li>
-      <li>Content here</li>
-      <li>Content here</li>
-      <li>Content here</li>
-      <li>Content here</li>
+      <li role="none"><h2><a href="#home">WorkHard...</a></h2></li>
+      <li role="none">Content here</li>
+      <li role="none">Content here</li>
+      <li role="none">Content here</li>
+      <li role="none">Content here</li>
+      <li role="none">Content here</li>
     </ul>
     <ul>
       <li>
